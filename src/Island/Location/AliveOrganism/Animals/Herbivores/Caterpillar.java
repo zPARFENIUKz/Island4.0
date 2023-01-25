@@ -1,7 +1,6 @@
-package Island.Life.Animal.Herbivore;
+package Island.Location.AliveOrganism.Animals.Herbivores;
 
-import Island.Configuration.AliveOrganismConfigurationLoader;
-import Island.Life.AliveOrganism;
+import Config.AliveOrganismConfiguration.AliveOrganismConfigurationLoader;
 
 public class Caterpillar extends Herbivore {
     public Caterpillar(AliveOrganismConfigurationLoader loader) {
@@ -9,7 +8,7 @@ public class Caterpillar extends Herbivore {
     }
 
     @Override
-    protected AliveOrganism reproduce() {
+    public Caterpillar reproduce() {
         return new Caterpillar(loader);
     }
 }

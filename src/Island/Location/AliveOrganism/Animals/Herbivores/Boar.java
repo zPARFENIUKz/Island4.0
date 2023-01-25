@@ -1,15 +1,15 @@
-package Island.Life.Animal.Herbivore;
+package Island.Location.AliveOrganism.Animals.Herbivores;
 
-import Island.Configuration.AliveOrganismConfigurationLoader;
-import Island.Life.AliveOrganism;
+import Config.AliveOrganismConfiguration.AliveOrganismConfigurationLoader;
 
 public class Boar extends Herbivore {
+
     public Boar(AliveOrganismConfigurationLoader loader) {
         super(loader, "/Animals/Herbivores/Boar");
     }
 
     @Override
-    protected AliveOrganism reproduce() {
+    public Boar reproduce() {
         return new Boar(loader);
     }
 }

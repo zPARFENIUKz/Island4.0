@@ -1,18 +1,18 @@
 package IslandManager.Exceptions;
 
-public class IslandManagerInterrupted extends RuntimeException {
-    public IslandManagerInterrupted() {
+public class IslandManagerInterruptedException extends RuntimeException {
+    public IslandManagerInterruptedException() {
     }
 
-    public IslandManagerInterrupted(String message) {
+    public IslandManagerInterruptedException(String message) {
         super(message);
     }
 
-    public IslandManagerInterrupted(String message, Throwable cause) {
+    public IslandManagerInterruptedException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public IslandManagerInterrupted(Throwable cause) {
+    public IslandManagerInterruptedException(Throwable cause) {
         super(cause);
     }
 }

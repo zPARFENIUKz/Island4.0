@@ -1,15 +1,15 @@
-package Island.Life.Animal.Herbivore;
+package Island.Location.AliveOrganism.Animals.Herbivores;
 
-import Island.Configuration.AliveOrganismConfigurationLoader;
-import Island.Life.AliveOrganism;
+import Config.AliveOrganismConfiguration.AliveOrganismConfigurationLoader;
 
 public class Buffalo extends Herbivore {
+
     public Buffalo(AliveOrganismConfigurationLoader loader) {
         super(loader, "/Animals/Herbivores/Buffalo");
     }
 
     @Override
-    protected AliveOrganism reproduce() {
+    public Buffalo reproduce() {
         return new Buffalo(loader);
     }
 }

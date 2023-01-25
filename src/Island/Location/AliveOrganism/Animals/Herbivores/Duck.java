@@ -1,7 +1,6 @@
-package Island.Life.Animal.Herbivore;
+package Island.Location.AliveOrganism.Animals.Herbivores;
 
-import Island.Configuration.AliveOrganismConfigurationLoader;
-import Island.Life.AliveOrganism;
+import Config.AliveOrganismConfiguration.AliveOrganismConfigurationLoader;
 
 public class Duck extends Herbivore {
     public Duck(AliveOrganismConfigurationLoader loader) {
@@ -9,7 +8,7 @@ public class Duck extends Herbivore {
     }
 
     @Override
-    protected AliveOrganism reproduce() {
+    public Duck reproduce() {
         return new Duck(loader);
     }
 }

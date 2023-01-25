@@ -1,7 +1,6 @@
-package Island.Life.Animal.Predator;
+package Island.Location.AliveOrganism.Animals.Predators;
 
-import Island.Configuration.AliveOrganismConfigurationLoader;
-import Island.Life.AliveOrganism;
+import Config.AliveOrganismConfiguration.AliveOrganismConfigurationLoader;
 
 public class Eagle extends Predator {
 
@@ -10,7 +9,7 @@ public class Eagle extends Predator {
     }
 
     @Override
-    protected AliveOrganism reproduce() {
+    public Eagle reproduce() {
         return new Eagle(loader);
     }
 }

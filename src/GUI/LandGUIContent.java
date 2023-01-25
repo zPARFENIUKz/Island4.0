@@ -1,2 +1,5 @@
-package GUI.LandGUIContent;public class LandGUIContent {
+package GUI;
+
+public interface LandGUIContent {
+    Object getContent();
 }
