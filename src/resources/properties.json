@@ -4,7 +4,7 @@
     "horizontalLocationsCount": 20,
     "isCycleDuringSomebodyALive": true,
     "cycleCount": 500,
-    "delayBetweenCyclesMillis": 50000
+    "delayBetweenCyclesMillis": 500
   },
   "WhoEatsWhoTable":
   [

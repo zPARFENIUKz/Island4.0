@@ -11,6 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Animal extends AliveOrganism {
     private static final int ENERGY_COST_FOR_LIVING_DIVIDER = 10;
+
     /////////////////////
     // inner information
     /////////////////////

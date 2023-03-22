@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Configurator {
-    protected static String configurationFilePath = "C:\\Users\\zzzif\\IdeaProjects\\Island4.0\\src\\Config\\properties.json";
+    protected static String configurationFilePath = "src/resources/properties.json";
     protected static int[][] whoEatsWhoTable;
 
     static {

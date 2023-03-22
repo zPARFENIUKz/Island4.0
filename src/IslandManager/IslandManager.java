@@ -49,7 +49,7 @@ public class IslandManager {
     }
 
     public static void main(String[] args) throws IOException {
-        final IslandManager manager = new IslandManager(new IslandManagerConfigurationLoader("C:\\Users\\zzzif\\IdeaProjects\\Island4.0\\src\\Config\\properties.json"));
+        final IslandManager manager = new IslandManager(new IslandManagerConfigurationLoader("src/resources/properties.json"));
         manager.start();
     }
 
@@ -112,10 +112,11 @@ public class IslandManager {
             reproducingAnimals();
             movingAnimals();
             spawnPlants();
-            //sleep();
+            sleep();
             printAliveOrganismsCount();
             System.out.println("#################################");
         }
+        executorService.shutdownNow();
     }
 
     private void printAliveOrganismsCount() {
